@@ -216,6 +216,7 @@ def build_html():
       <a href="#design-venn-diagram" class="sub2">↳ Venn Diagram</a>
       <a href="#design-story--plot-map" class="sub2">↳ Story / Plot Map</a>
       <a href="#design-multi-zone-organizer" class="sub2">↳ Multi-zone Organizer</a>
+      <a href="#design-kwl-know--want--learned" class="sub2">↳ KWL (Know / Want / Learned)</a>
       <a href="#free" class="sub">Free Response</a>
       <a href="#zoom" class="sub">Zoom Reader</a>
       <a href="#builder" class="sub">Sentence Builder</a>
@@ -365,7 +366,8 @@ def build_html():
         <tr><td><a href="#organizer"><b>Graphic Organizer</b></a> — label a diagram</td><td>14×+</td>
           <td class="small"><a href="#design-venn-diagram">Venn Diagram</a> ·
             <a href="#design-story--plot-map">Story / Plot Map</a> ·
-            <a href="#design-multi-zone-organizer">Multi-zone Organizer</a></td></tr>
+            <a href="#design-multi-zone-organizer">Multi-zone Organizer</a> ·
+            <a href="#design-kwl-know--want--learned">KWL (Know / Want / Learned)</a></td></tr>
         <tr><td><a href="#free"><b>Free Response</b></a> (input fields)</td><td>—</td>
           <td class="small">see above</td></tr>
         <tr><td><a href="#zoom"><b>Zoom Reader</b></a> — read / scroll a sequence</td><td>—</td>

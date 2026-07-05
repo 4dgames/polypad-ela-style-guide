@@ -147,6 +147,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
       <a href="#design-venn-diagram" class="sub2">↳ Venn Diagram</a>
       <a href="#design-story--plot-map" class="sub2">↳ Story / Plot Map</a>
       <a href="#design-multi-zone-organizer" class="sub2">↳ Multi-zone Organizer</a>
+      <a href="#design-kwl-know--want--learned" class="sub2">↳ KWL (Know / Want / Learned)</a>
       <a href="#free" class="sub">Free Response</a>
       <a href="#zoom" class="sub">Zoom Reader</a>
       <a href="#builder" class="sub">Sentence Builder</a>
@@ -282,7 +283,8 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
         <tr><td><a href="#organizer"><b>Graphic Organizer</b></a> — label a diagram</td><td>14×+</td>
           <td class="small"><a href="#design-venn-diagram">Venn Diagram</a> ·
             <a href="#design-story--plot-map">Story / Plot Map</a> ·
-            <a href="#design-multi-zone-organizer">Multi-zone Organizer</a></td></tr>
+            <a href="#design-multi-zone-organizer">Multi-zone Organizer</a> ·
+            <a href="#design-kwl-know--want--learned">KWL (Know / Want / Learned)</a></td></tr>
         <tr><td><a href="#free"><b>Free Response</b></a> (input fields)</td><td>—</td>
           <td class="small">see above</td></tr>
         <tr><td><a href="#zoom"><b>Zoom Reader</b></a> — read / scroll a sequence</td><td>—</td>
@@ -505,6 +507,24 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
             
             <details><summary class="small">More examples (2)</summary>
               <p class="small"><a href="https://classroom.amplify.com/activity/69839e011d1361a98005ff9e">Integration of Knowledge and Ide</a> <span class="small">(ELA)</span> · <a href="https://classroom.amplify.com/activity/69f13d60f1d6dee9ba6b7ea0">Rutina de integración de conocim</a> <span class="small">(Caminos)</span></p></details>
+          </div>
+        </div>
+        <div class="vcard" id="design-kwl-know--want--learned">
+          <div class="vthumb"><img src="https://uploads.desmos.com/activitybuilder/43fb15518bf89c435b89e3ef70c816d7" alt="KWL (Know / Want / Learned) ideal example" loading="lazy"></div>
+          <div class="vbody">
+            <div class="vhead"><span class="gcount">1×</span>
+              <h4>KWL (Know / Want / Learned)</h4></div>
+            <p class="small">Three labeled columns — What I Know / Want to Know / Learned — each with a text-input field below. Students type (no dragging) to activate prior knowledge, set questions, and reflect.</p>
+            <div class="vspec"><b>Spec</b><dl><dt>Structure</dt><dd>three labeled columns — <b>What I Know / What I Want to Know / What I Learned</b></dd><dt>Header</dt><dd>a pale-blue <code>#d1e4f7</code> chip per column, locked, `#111111` text</dd><dt>Input</dt><dd>a <code>question-blank</code> (mode <code>text</code>) input field under each column — students type, no dragging</dd><dt>Mechanism</dt><dd>this is a Free-Response organizer (input fields), grouped here by purpose, not drag-drop</dd><dt>Canvas</dt><dd>cream <code>#fff8e9</code>, actionbar + toolbar hidden</dd></dl></div>
+            <div class="vspec"><b>Checklist</b><ul class="vcheck"><li>Three columns, each with a locked header chip + one input field.</li><li>Headers are `#d1e4f7`; fields white; canvas `#fff8e9`.</li><li>Prompt/headers non-editable; only the fields accept typing.</li><li>Square-ish footprint so all three columns are equal and fully visible.</li></ul></div>
+            <div class="vfix"><b>Conform it:</b> Lay out 3 equal columns; header = locked text tile (`#d1e4f7`), body = `question-blank` mode:text. Lock the headers, hide the toolbar, set the cream background. No validation (open reflection).</div>
+            <p class="small"><b>Best example:</b>
+              <a href="https://classroom.amplify.com/activity/6a08871a1338e4658fbbf22f">KWL Chart (reference design)</a>
+              <span class='small'>(ELA, Gr None)</span>
+              &nbsp;·&nbsp; <a class="btnlink ghost" href="https://classroom.amplify.com/activity/6a08871a1338e4658fbbf22f">Open live ↗</a></p>
+            <p class="small"><b>Audit notes:</b> Added reference design — no shipped catalog example; built to spec.</p>
+            <details><summary class="small">More examples (1)</summary>
+              <p class="small"><a href="https://classroom.amplify.com/activity/6a08871a1338e4658fbbf22f">KWL Chart (reference design)</a> <span class="small">(ELA)</span></p></details>
           </div>
         </div></div></section><section id="free"><h2><span class="num">4</span> &nbsp;Free Response</h2><p class="lede">Type an answer into a box. No dragging — students write. The most consistent pattern in the catalog.</p><div class="callout"><div class="t">When to use it</div>Use when the answer is <b>constructed text</b> — definitions, short responses, notes. Two labeled columns with input fields, or a single passage + response.</div><h3>The intended look</h3><div class="figure"><img src="https://uploads.desmos.com/activitybuilder/ccf2d51e5aa5ebbbbaebefae2fbecab9" alt="Free Response intended example">
           <div class="figcap"><span class="tag good">Intended style</span> The <b>Text-into-Polypad</b> demo (David Poras): text pulled into Polypad via the CL sink, with input fields and passage components. This is the modern ELA free-response pattern.

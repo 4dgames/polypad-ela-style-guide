@@ -35,6 +35,7 @@ DESC = {
     "Venn Diagram": "Two overlapping regions for shared vs. unique attributes ('Integration of Knowledge and Ideas').",
     "Timeline / Sequence": "Order events chronologically, or sort signal words by structure (chronology vs. cause & effect).",
     "Rhetorical Appeals": "Match quotations/examples to ethos / pathos / logos.",
+    "KWL (Know / Want / Learned)": "Three labeled columns — What I Know / Want to Know / Learned — each with a text-input field below. Students type (no dragging) to activate prior knowledge, set questions, and reflect.",
     "Other": "Screens that don't fit a named pattern — usually candidates to rebuild on a standard template.",
 }
 
@@ -117,6 +118,21 @@ VARIANT_SPEC = {
         "fix": "Style all three regions with one dashed #b0bed2 treatment, lock labels, set one background. "
                "Region geometry stays manual.",
     },
+    "KWL (Know / Want / Learned)": {
+        "builds_on": ("Graphic Organizer", "#organizer"),
+        "spec": [("Structure", "three labeled columns — <b>What I Know / What I Want to Know / What I Learned</b>"),
+                 ("Header", "a pale-blue <code>#d1e4f7</code> chip per column, locked, `#111111` text"),
+                 ("Input", "a <code>question-blank</code> (mode <code>text</code>) input field under each column — students type, no dragging"),
+                 ("Mechanism", "this is a Free-Response organizer (input fields), grouped here by purpose, not drag-drop"),
+                 ("Canvas", "cream <code>#fff8e9</code>, actionbar + toolbar hidden")],
+        "check": ["Three columns, each with a locked header chip + one input field.",
+                  "Headers are `#d1e4f7`; fields white; canvas `#fff8e9`.",
+                  "Prompt/headers non-editable; only the fields accept typing.",
+                  "Square-ish footprint so all three columns are equal and fully visible."],
+        "fix": "Lay out 3 equal columns; header = locked text tile (`#d1e4f7`), body = `question-blank` "
+               "mode:text. Lock the headers, hide the toolbar, set the cream background. No validation "
+               "(open reflection).",
+    },
     "Timeline / Sequence": {
         "builds_on": ("Card Sort", "#sort"),
         "spec": [("Layout", "order events chronologically, or sort signal words by structure"),
@@ -150,6 +166,7 @@ VARIANT_PARENT = {
     "Venn Diagram": "#organizer",
     "Story / Plot Map": "#organizer",
     "Multi-zone Organizer": "#organizer",
+    "KWL (Know / Want / Learned)": "#organizer",
 }
 
 def build():
