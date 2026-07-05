@@ -223,6 +223,7 @@ def build_html():
       <a href="#canvas">Canvas &amp; viewport</a>
       <a href="#fixscript">The auto-fix script</a>
       <a href="#appendix">Appendix — what to avoid</a>
+      <a href="#comments">Comments &amp; discussion</a>
     </nav>""")
 
     a('<main>')
@@ -819,6 +820,31 @@ python tools/audit_and_fix_style.py &lt;activity-url&gt; --fix</code></pre>
         <a href="{CKLA_SLIDES}">CKLA Drag &amp; Drop Authoring Guide</a> ·
         <a href="{GSITE_INDEX}">K-5 Math Suite Design Handbook</a> ·
         the 178-screen ELA audit. Images hosted on Polypad's public S3 (no sign-in to view).</p>
+    </section>""")
+
+    # ---------- COMMENTS (giscus) ----------
+    a(f"""<section id="comments">
+      <h2><span class="num">§</span> Comments &amp; discussion</h2>
+      <p class="lede">Questions, suggestions, or a screen that doesn't fit the guide? Leave a comment below.
+        Threads are saved to the repo's GitHub Discussions.</p>
+      <div class="card" style="padding:16px 18px">
+        <script src="https://giscus.app/client.js"
+          data-repo="4dgames/polypad-ela-style-guide"
+          data-repo-id="R_kgDOTL7GEw"
+          data-category="General"
+          data-category-id="DIC_kwDOTL7GE84DAhKp"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="light"
+          data-lang="en"
+          crossorigin="anonymous"
+          async>
+        </script>
+        <noscript><p class="small">Enable JavaScript to view and post comments (powered by giscus / GitHub Discussions).</p></noscript>
+      </div>
     </section>""")
 
     a('</main></div></div>')  # close main, layout, wrap
